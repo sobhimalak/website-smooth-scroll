@@ -79,7 +79,7 @@ export const NavLinks = styled(LinkS)`
  height:100%;
  cursor: pointer;
  
- &:active{
+ &.active{
      border-bottom: 2px solid #6CAD11;
  }
 
