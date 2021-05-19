@@ -18,7 +18,7 @@ function App() {
         <Route path="/signin" component={SigninPage} exact />
         <View style={{ flex: 1, alignItems: "center" }}>
           <CookieBot domainGroupId={domainGroupId} />
-          <Text>Click to test Cookiebot</Text>
+          {/* <Text>Click to test Cookiebot</Text>
           <Button
             title="TEST"
             onPress={() =>
@@ -27,7 +27,7 @@ function App() {
           />
           <Text style={{ color: "red", marginVertical: 10 }}>
             {hasCookieBot && `Has CookieBot: ${JSON.stringify(hasCookieBot)}`}
-          </Text>
+          </Text> */}
         </View>
       </Switch>
     </Router>
