@@ -95,6 +95,6 @@ cursor: pointer;
 export const Text = styled.span`
  text-align:center;
  margin-top:24px;
- columns:#fff;
+ color:#fff;
  font-size:14px;
 `
