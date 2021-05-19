@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages";
 import SigninPage from "./pages/signin";
 import { Button, View, Text } from "react-dom";
-// import { CookieBot } from "react-cookiebot/lib/CookieBot";
+import { CookieBot } from "react-cookiebot/lib/CookieBot";
 
 // const domainGroupId = "30ee9c14-eff9-45be-9007-a78faa459041";
 const domainGroupId = 'ecff8d69-d1cb-416f-a86f-ba55b3f38707';
