@@ -16,20 +16,20 @@ function App() {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/signin" component={SigninPage} exact />
+        <View style={{ flex: 1, alignItems: "center" }}>
+          <CookieBot domainGroupId={domainGroupId} />
+          <Text>Click to test Cookiebot</Text>
+          <Button
+            title="TEST"
+            onPress={() =>
+              setHasCookieBot(!!document.querySelector("#CookieBot"))
+            }
+          />
+          <Text style={{ color: "red", marginVertical: 10 }}>
+            {hasCookieBot && `Has CookieBot: ${JSON.stringify(hasCookieBot)}`}
+          </Text>
+        </View>
       </Switch>
-      <View style={{ flex: 1, alignItems: "center" }}>
-        <CookieBot domainGroupId={domainGroupId} />
-        <Text>Click to test Cookiebot</Text>
-        <Button
-          title="TEST"
-          onPress={() =>
-            setHasCookieBot(!!document.querySelector("#CookieBot"))
-          }
-        />
-        <Text style={{ color: "red", marginVertical: 10 }}>
-          {hasCookieBot && `Has CookieBot: ${JSON.stringify(hasCookieBot)}`}
-        </Text>
-      </View>
     </Router>
   );
 }
